@@ -12,3 +12,9 @@ def nb_en_panne(parc):
         if pc["en_panne"] == True:
             compteur_panne += 1
     return(compteur_panne)
+
+def ram_moyenne(parc):
+    for pc in parc:
+        ram_total += pc ["ram"]
+    moyenne_ram = ram_total / len(parc)
+    return(moyenne_ram)
